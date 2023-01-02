@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/clr_FFFFFF"
+        tools:context=".activites.OnBoardingActivity">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/screenPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/clr_FFFFFF"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="62dp"
+                android:background="@color/clr_FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tabBackground="@drawable/indicatior_selector"
+                app:tabIndicatorHeight="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtBtnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="56dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/next"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="#EA2A31"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</layout>

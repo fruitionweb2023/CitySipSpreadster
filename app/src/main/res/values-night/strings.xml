@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_to">Welcome to</string>
+    <string name="error_admin">Please Contact Administrator</string>
+    <string name="spreadster">Spreadster</string>
+    <string name="onBoarding_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</string>
+    <string name="next">Next</string>
+</resources>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_FFFFFF"
+        tools:context=".activites.AddPromotionActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginBottom="75dp"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="75dp"
+                android:background="@color/clr_FFFFFF"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/txtBusinessName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:maxLines="1"
+                            android:text="La Pino’z Pizza"
+                            android:textColor="@color/clr_111111"
+                            android:textSize="26sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/txtAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/roboto_regular"
+                            android:maxLines="1"
+                            android:text="Raysan, Gandhinagar"
+                            android:textColor="@color/clr_666666"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/square_box_fill_with_radius"
+                        android:orientation="horizontal"
+                        android:paddingStart="17dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="12dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtPercentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="12%"
+                                android:textColor="@color/clr_FFFFFF"
+                                android:textSize="24dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Per Order"
+                                android:textColor="@color/clr_FFFFFF"
+                                android:textSize="11dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/clr_FF6A71" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="16dp">
+
+                            <TextView
+                                android:id="@+id/txtOfferTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="start"
+                                android:maxLines="2"
+                                android:text="40% Off on ₹500 or above order.
+Offer valid on selected items."
+                                android:textColor="@color/clr_FFD1D1"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Promotion Title"
+                            android:textColor="@color/clr_888888"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/edtPromotionTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/edt_number_border"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Grab the offer at La Pino’z Pizza Now"
+                            android:paddingStart="16dp"
+                            android:maxLines="1"
+                            android:textColor="@color/clr_111111"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Promo Code"
+                            android:textColor="@color/clr_888888"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/edtPromoCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/edt_number_border"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="RUS2027"
+                            android:maxLines="1"
+                            android:ems="7"
+                            android:singleLine="true"
+                            android:paddingStart="16dp"
+                            android:textColor="@color/clr_111111"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:visibility="visible"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Promotion Description"
+                            android:textColor="@color/clr_888888"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/edtDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="114dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/edt_number_border"
+                            android:gravity="start"
+                            android:hint="@string/describe_here"
+                            android:importantForAutofill="no"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="16dp"
+                            android:paddingTop="13dp"
+                            android:paddingEnd="16dp"
+                            android:paddingBottom="13dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/clr_999999"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Add Banner or Video"
+                            android:textColor="@color/clr_888888"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:weightSum="100"
+                            android:gravity="center"
+                            android:background="@drawable/border_with_dots">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="80">
+
+                                <TextView
+                                    android:id="@+id/txtFileName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:singleLine="true"
+                                    android:maxLines="1"
+                                    android:paddingStart="10dp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:gravity="start"
+                                    android:hint=".jpg, .png, .mp4, .mkv only"
+                                    android:textColor="@color/clr_EA2A31"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llClose"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_weight="20">
+
+                                <ImageView
+                                    android:id="@+id/imgClose"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                   android:src="@drawable/close" />
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/clr_EEEEEE" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="24dp"
+            android:background="@color/clr_FFFFFF"
+            android:weightSum="2">
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/btnPreview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Preview"
+                    android:textAllCaps="false"
+                    android:textColor="@color/clr_EA2A31"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnSpreadNow"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_sixtydp_corner_radius"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Spread Now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/clr_FFFFFF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

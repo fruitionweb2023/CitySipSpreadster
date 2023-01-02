@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_FFFFFF"
+        tools:context=".activites.NewPromotionActivity">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/clr_FFFFFF"
+            android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="New "
+                android:textColor="@color/clr_111111"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Promotions"
+                android:textColor="@color/clr_EA2A31"
+                android:textSize="26sp" />
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="24dp"
+                android:weightSum="100">
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="18dp"
+                        android:paddingTop="14dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="14dp"
+                        android:background="@drawable/eight_dp_corner_box_one_dp_thik">
+
+                        <ImageView
+                            android:id="@+id/imgSearch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_search"/>
+
+                        <EditText
+                            android:id="@+id/edtSearchView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:layout_toEndOf="@+id/imgSearch"
+                            android:background="@android:color/transparent"
+                            android:hint="Search Anything..." />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_filterbtn"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="24dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rclrCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:clipToPadding="false"
+                        tools:listitem="@layout/raw_promotions_category_list"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:paddingEnd="24dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/clr_EEEEEE"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rclrCategoryList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:layout_marginTop="8dp"
+                        android:visibility="visible"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+
+
+                    <ImageView
+                        android:id="@+id/imgError"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/ic_data_no_found"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+</layout>

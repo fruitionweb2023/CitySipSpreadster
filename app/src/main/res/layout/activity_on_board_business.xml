@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_FFFFFF"
+        tools:context=".activites.OnBoardBusinessActivity">
+
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_above="@id/llBottom"
+            android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/clr_FFFFFF"
+            android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Onboarded "
+                    android:textColor="@color/clr_111111"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Businesses"
+                    android:textColor="@color/clr_EA2A31"
+                    android:textSize="26sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="24dp"
+                android:weightSum="100">
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="18dp"
+                        android:paddingTop="14dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="14dp"
+                        android:background="@drawable/eight_dp_corner_box_one_dp_thik">
+
+                        <ImageView
+                            android:id="@+id/imgSearch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_search"/>
+
+                        <EditText
+                            android:id="@+id/edtSearchView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:layout_toEndOf="@+id/imgSearch"
+                            android:background="@android:color/transparent"
+                            android:hint="Search Anything..." />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_filterbtn"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:scrollbars="none">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:scrollbars="none"
+                    android:scrollIndicators="none">
+
+
+                    <Button
+                        android:id="@+id/btnReminderRequire"
+                        android:layout_width="160dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/btn_sixtydp_corner_radius"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Reminder Require"
+                        android:textAllCaps="false"
+                        android:textColor="@color/clr_FFFFFF"
+                        android:textSize="14sp" />
+
+
+                    <Button
+                        android:id="@+id/btnNotResponded"
+                        android:layout_width="160dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Not Responded"
+                        android:textAllCaps="false"
+                        android:textColor="@color/clr_EA2A31"
+                        android:textSize="14sp" />
+
+
+                    <Button
+                        android:id="@+id/btninvited"
+                        android:layout_width="160dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Invited"
+                        android:textAllCaps="false"
+                        android:textColor="@color/clr_EA2A31"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnOnBoard"
+                        android:layout_width="160dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Onboarded"
+                        android:textAllCaps="false"
+                        android:textColor="@color/clr_EA2A31"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:id="@+id/rclrOnBoardedBusiness"/>
+
+                <ImageView
+                    android:id="@+id/imgError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_data_no_found"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/llBottom"
+            android:background="@color/clr_FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:weightSum="100"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10">
+
+
+                <CheckBox
+                    android:id="@+id/cbSelectAllOnBusiness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/checkbox_selector"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/clr_111111" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="40">
+
+
+                <TextView
+                    android:id="@+id/txtCBCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="Select All(0)"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/clr_333333"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="50">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:background="@drawable/btn_sixtydp_corner_radius"
+                    android:text="Send Reminder"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:layout_gravity="end"
+                    android:textAllCaps="false"
+                    android:textColor="@color/clr_FFFFFF"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_medium" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

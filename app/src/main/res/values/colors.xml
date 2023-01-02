@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="clr_E5E5E5">#E5E5E5</color>
+    <color name="clr_111111">#111111</color>
+    <color name="clr_EA2A31">#EA2A31</color>
+    <color name="clr_666666">#666666</color>
+    <color name="clr_F06369">#F06369</color>
+    <color name="clr_C4C4C4">#C4C4C4</color>
+    <color name="clr_888888">#888888</color>
+    <color name="clr_999999">#999999</color>
+    <color name="clr_BBBBBB">#BBBBBB</color>
+    <color name="clr_F1F1F1">#F1F1F1</color>
+    <color name="clr_FFFFFF">#FFFFFF</color>
+    <color name="clr_F06B6F">#F06B6F</color>
+    <color name="clr_EEEEEE">#EEEEEE</color>
+    <color name="clr_F3E5FF">#F3E5FF</color>
+    <color name="clr_EEFFEE">#EEFFEE</color>
+    <color name="clr_EEFAFF">#EEFAFF</color>
+    <color name="clr_333333">#333333</color>
+    <color name="clr_777777">#777777</color>
+    <color name="clr_FF6A71">#FF6A71</color>
+    <color name="clr_FFD1D1">#FFD1D1</color>
+    <color name="clr_00BD35">#00BD35</color>
+    <color name="clr_DDDDDD">#DDDDDD</color>
+    <color name="clr_555555">#555555</color>
+    <color name="clr_BFBFBF">#BFBFBF</color>
+    <color name="clr_8E8E8E">#8E8E8E</color>
+
+    <color name="clr_FF6D73">#FF6D73</color>
+    <color name="clr_D275FF">#D275FF</color>
+    <color name="clr_6ACC73">#6ACC73</color>
+    <color name="clr_70DCFF">#70DCFF</color>
+    <color name="clr_6991FF">#6991FF</color>
+    <color name="clr_F59599">#F59599</color>
+    <color name="colorDekraYellow">#FFB0B3</color>
+    <color name="colorLightYellow">#27086291</color>
+    <color name="newcolor">#27086291</color>
+
+
+
+
+</resources>

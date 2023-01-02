@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/clr_FFFFFF"
+        android:weightSum="100"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10">
+
+
+            <CheckBox
+                android:id="@+id/cbSelectAllOnBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/checkbox_selector"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/clr_111111" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="40">
+
+
+        <TextView
+            android:id="@+id/txtBusinessName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_medium"
+            android:text="select all(5)"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/clr_333333"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_weight="50">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDone"
+            android:layout_width="144dp"
+            android:layout_height="36dp"
+            android:background="@drawable/btn_sixtydp_corner_radius"
+            android:text="Done"
+            android:layout_gravity="end"
+            android:textAllCaps="false"
+            android:textColor="@color/clr_FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_medium" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

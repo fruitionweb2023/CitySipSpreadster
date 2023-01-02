@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/llMain"
+        android:layout_width="104dp"
+        android:padding="2dp"
+        android:layout_height="104dp">
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <ImageView
+              android:id="@+id/imgProfile"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:scaleType="fitXY"
+              android:src="@drawable/bg_image"/>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="8dp"
+              android:layout_marginStart="8dp"
+              android:gravity="bottom"
+              android:layout_marginEnd="8dp"
+              android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/txtOffer"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="40% off at "
+                  android:fontFamily="@font/roboto_medium"
+                  android:textSize="12sp"
+                  android:ellipsize="end"
+                  android:maxLines="1"
+                  android:textColor="@color/clr_FFFFFF"/>
+
+              <TextView
+                  android:id="@+id/txtBusinessName"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="La Pino’z Pizza"
+                  android:fontFamily="@font/roboto_medium"
+                  android:textSize="12sp"
+                  android:ellipsize="end"
+                  android:maxLines="1"
+                  android:textColor="@color/clr_FFFFFF"/>
+          </LinearLayout>
+      </FrameLayout>
+
+    </RelativeLayout>
+</layout>

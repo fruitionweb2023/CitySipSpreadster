@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/eight_dp_corner_box_one_dp_thik"
+        android:padding="24dp"
+        tools:context=".activites.DemoActivity">
+
+       <!-- <com.androidplot.xy.XYPlot
+            style="@style/APDefacto.Light"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:id="@+id/plot"
+            android:padding="16dp"
+            android:scrollbarStyle="insideInset"
+            app:title="Earning vs Reach"
+            />-->
+
+      <!--  <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lineChart"/>-->
+
+      <!--  <com.anychart.AnyChartView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:id="@+id/anyChart"/>
+-->
+        <com.highsoft.highcharts.core.HIChartView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/newChart"/>
+    </LinearLayout>
+</layout>

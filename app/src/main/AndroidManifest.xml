@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> <!-- My Location -->
+    <uses-permission android:name="com.example.mapdemo.permission.MAPS_RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CitySipSpreadster"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute">
+
+
+
+        <activity
+            android:name=".activites.OrderNowActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activites.SpreadsterProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <activity
+            android:name=".activites.NotificationActivty"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activites.IndividualOnBoarding"
+            android:exported="false" />
+        <activity
+            android:name=".activites.IndividualOnBoardListItemRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.IndividualOnBoardListItemDetails"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activites.OnBoardBusinessActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name=".activites.MyAccountActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activites.DemoActivity"
+            android:exported="true">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name=".activites.MassOnBoardingActivity"
+            android:exported="false">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name=".activites.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.FaqAnswerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.MyWalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.LinkedAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.MyPromotionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.NewBusinessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.RemindBusinessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.InviteBusinessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.FaqDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.ManageNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.SpreadsterFaqsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.TermsAndConditions"
+            android:exported="false" />
+        <activity
+            android:name=".activites.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.CustomerSupportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.SocialAccountsActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".activites.ImagePickerActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activites.SharePromotionActivity"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https"
+                    android:host="medicaiditpark.com" />
+
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http"
+                    android:host="medicaiditpark.com" />
+
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activites.AddPromotionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.NewPromotionDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.NewPromotionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.ProfileActivity"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".activites.DeshBoardActivity"
+            android:exported="false"
+            android:noHistory="true" >
+
+
+        </activity>
+
+
+        <activity
+            android:name=".activites.NumberVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.CreateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.OnBoardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.SpleshScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activites.MainActivity"
+            android:exported="true">
+
+            <!--
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+
+        </activity>
+    </application>
+
+</manifest>

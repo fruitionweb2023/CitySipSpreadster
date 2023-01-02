@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_FFFFFF"
+        tools:context=".activites.InviteBusinessActivity">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llBtn"
+            android:layout_below="@id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="52dp"
+                android:orientation="vertical"
+                android:background="@color/clr_FFFFFF"
+                android:padding="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Remind "
+                        android:textColor="@color/clr_111111"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Business"
+                        android:textColor="@color/clr_EA2A31"
+                        android:textSize="26sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Invitation Link"
+                        android:textColor="@color/clr_888888"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/edtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/edt_number_border"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:backgroundTint="@color/clr_BFBFBF"
+                        android:text="https://business.citysip.com/sid123456"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:textColor="@color/clr_8E8E8E"
+                        android:textColorHint="@color/clr_999999" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Add Message"
+                        android:textColor="@color/clr_888888"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/edtAbout"
+                        android:layout_width="match_parent"
+                        android:layout_height="136dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/edt_number_border"
+                        android:gravity="start"
+                        android:textSize="14sp"
+                        android:hint="Add Custome Message here..."
+                        android:importantForAutofill="no"
+                        android:inputType="textEmailAddress"
+                        android:padding="13dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/clr_999999" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/llBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <Button
+                android:id="@+id/btnSendInvitation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_gradiant_background"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Send Invitation"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

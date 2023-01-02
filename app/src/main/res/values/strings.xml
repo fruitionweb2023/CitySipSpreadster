@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">CitySip Spreadster</string>
+    <string name="error_admin">Please Contact Administrator</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="spreadster">Spreadster</string>
+    <string name="onBoarding_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</string>
+    <string name="next">Next</string>
+    <string name="login_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</string>
+    <string name="account">account</string>
+    <string name="login_to">Login to</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="_91_7622908022">+91 7622908022</string>
+    <string name="otp">OTP</string>
+    <string name="login">Login</string>
+    <string name="dont_have_an_account">Dont have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_to">Sign up to</string>
+    <string name="join_us">Join Us</string>
+    <string name="create">Create</string>
+    <string name="profile">Profile</string>
+    <string name="full_name">Full Name</string>
+    <string name="rushabh_patel">Rushabh Patel</string>
+    <string name="email">Email</string>
+    <string name="rushabh_patel_gmail_com">rushabh.Patel@gmail.com</string>
+    <string name="start">Let’s Start</string>
+    <string name="about_me">About Me</string>
+    <string name="describe_here">Describe here...</string>
+    <string name="verify">Verify</string>
+    <string name="save">Save</string>
+    <string name="few_words_of_yourself">Few words of yourself</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="edit">Edit</string>
+    <string name="my">My</string>
+    <string name="gandhinagar">Gandhinagar</string>
+    <string name="gujarat">Gujarat</string>
+    <string name="india">India</string>
+    <string name="number">Number</string>
+    <string name="onboard">Onboard</string>
+    <string name="business">Business</string>
+
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="terms"><![CDATA[Terms &]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="mahdiasd_file_picker_failed_open_file">Error when open file, please choose another!</string>
+
+    <string name="mahdiasd_file_picker_cant_find_this_file">Can`t find this file</string>
+
+    <string name="mahdiasd_file_picker_video">Video</string>
+
+    <string name="mahdiasd_file_picker_audio">Audio</string>
+
+    <string name="mahdiasd_file_picker_file_manager">File Manager</string>
+
+    <string name="mahdiasd_file_picker_image">Image</string>
+
+    <string name="mahdiasd_file_picker_open_storage">Open Storage</string>
+
+    <string name="mahdiasd_file_picker_max_total_size">Max size for total files is</string>
+
+    <string name="mahdiasd_file_picker_max_each_size">Max size for each files is</string>
+
+    <string name="mahdiasd_file_picker_search">Search…</string>
+</resources>

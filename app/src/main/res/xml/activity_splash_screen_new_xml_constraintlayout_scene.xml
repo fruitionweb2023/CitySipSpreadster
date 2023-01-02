@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="10000"
+        motion:transitionDisable="false">
+        <KeyFrameSet>
+            <KeyPosition
+                motion:motionTarget="@+id/imageView_twitter"
+                motion:framePosition="25"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.5"
+                motion:percentY="0.5" />
+            <KeyPosition
+                motion:motionTarget="@+id/imageView_youtube"
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.8"
+                motion:percentY="0.8" />
+            <KeyPosition
+                motion:motionTarget="@+id/imageView_link"
+                motion:framePosition="20"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.2"
+                motion:percentY="0.2" />
+            <KeyPosition
+                motion:motionTarget="@+id/imageView_link"
+                motion:framePosition="80"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="1"
+                motion:percentY="1" />
+            <KeyPosition
+                motion:motionTarget="@+id/imageView_insta"
+                motion:framePosition="35"
+                motion:keyPositionType="pathRelative"
+                motion:percentX="0.5"
+                motion:percentY="0.5" />
+            <KeyPosition
+                motion:motionTarget="@+id/imageView"
+                motion:framePosition="45"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.2"
+                motion:percentY="0.9" />
+        </KeyFrameSet>
+
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:id="@+id/imageView_insta"
+            android:alpha="0.5"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="112dp"
+            android:alpha="0.5"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.89"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:id="@+id/imageView_link" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_marginTop="36dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:alpha="0.5"
+            android:id="@+id/imageView_youtube"
+            android:layout_marginEnd="156dp"
+            android:layout_marginRight="156dp" />
+        <Constraint
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView_insta"
+            motion:layout_constraintEnd_toEndOf="@id/imageView_twitter"
+            motion:layout_constraintBottom_toBottomOf="@id/imageView_twitter"
+            android:layout_marginEnd="125dp"
+            android:alpha="0.5"
+            android:layout_marginRight="125dp"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="288dp"
+            android:alpha="0.7"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="532dp"
+            android:layout_marginLeft="288dp" />
+        <Constraint
+            android:id="@+id/imageView_youtube"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="260dp"
+            android:alpha="0.7"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="260dp"
+            android:layout_marginTop="536dp" />
+        <Constraint
+            android:id="@+id/imageView_link"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="648dp"
+            android:layout_marginEnd="50dp"
+            android:alpha="0.7"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.498"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/imageView_insta"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="580dp"
+            android:alpha="0.7"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintEnd_toStartOf="@+id/imageView_youtube"
+            motion:layout_constraintHorizontal_bias="0.16"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/imageView_twitter"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="628dp"
+            android:alpha="0.7"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+    </ConstraintSet>
+</MotionScene>

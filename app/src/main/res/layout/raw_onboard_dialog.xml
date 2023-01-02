@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="480dp"
+        tools:context=".activites.OnBoardingActivity">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/screenPager"
+            android:layout_width="match_parent"
+            android:layout_height="348dp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screenPager"
+            android:layout_marginStart="24dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/clr_E5E5E5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabBackground="@drawable/indicatior_selector"
+            app:tabIndicatorHeight="0dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabIndicator"
+            android:layout_marginStart="32dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Skip"
+            android:textColor="#EA2A31"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/txtBtnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/btn_sixtydp_corner_radius"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_below="@+id/tabIndicator"
+                android:text="@string/next"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/clr_FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+</layout>

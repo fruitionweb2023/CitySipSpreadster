@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_FFFFFF"
+        tools:context=".activites.EditProfileActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="24dp"
+                android:paddingTop="32dp"
+                android:paddingEnd="24dp"
+                android:background="@color/clr_FFFFFF"
+                android:paddingBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/edit"
+                        android:textColor="@color/clr_111111"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/profile"
+                        android:textColor="@color/clr_EA2A31"
+                        android:textSize="26sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/login_txt"
+                        android:textColor="@color/clr_666666"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/full_name"
+                        android:textColor="@color/clr_888888"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/edtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/edt_number_border"
+                        android:gravity="center_vertical"
+                        android:hint="enter your name"
+                        android:importantForAutofill="no"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textSize="14sp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/clr_999999" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/contact_number"
+                        android:textColor="@color/clr_888888"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/edtPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/edt_number_border"
+                        android:gravity="center_vertical"
+                        android:hint="+91 00000 00000"
+                        android:maxEms="10"
+                        android:maxLines="1"
+                        android:textSize="14sp"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/clr_999999" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/email"
+                        android:textColor="@color/clr_888888"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/edt_number_border"
+                        android:gravity="center_vertical"
+                        android:hint="xyz@gmail.com"
+                        android:textSize="14sp"
+                        android:importantForAutofill="no"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="16dp"
+                        android:maxLines="1"
+                        android:paddingEnd="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/clr_999999" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/country"
+                        android:textColor="@color/clr_888888"
+                        android:textSize="12sp" />
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="6dp">
+
+                       <TextView
+                           android:id="@+id/txtCountry"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center_vertical"
+                           android:background="@drawable/edt_number_border"
+                           android:gravity="center_vertical"
+                           android:paddingStart="16dp"
+                           android:paddingEnd="16dp"
+                           android:hint="Select Country"
+                           android:textColor="@color/black"
+                           android:textColorHint="@color/clr_999999" />
+
+                      <!-- <Spinner
+                           android:id="@+id/spCountry"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:padding="2dp"
+                           android:background="@drawable/spinner_background" />-->
+                   </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/state"
+                        android:textColor="@color/clr_888888"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            android:id="@+id/txtState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/edt_number_border"
+                            android:gravity="center_vertical"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:hint="Select State"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/clr_999999" />
+
+                   <!-- <Spinner
+                        android:id="@+id/spState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       android:padding="2dp"
+                        android:background="@drawable/spinner_background" />-->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/city"
+                        android:textColor="@color/clr_888888"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            android:id="@+id/txtCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/edt_number_border"
+                            android:gravity="center_vertical"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:hint="Select City"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/clr_999999" />
+
+                  <!--  <Spinner
+                        android:id="@+id/spCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:background="@drawable/edt_number_border" />-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/about_me"
+                        android:textColor="@color/clr_888888"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/edtAboutMe"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/edt_number_border"
+                        android:gravity="start"
+                        android:hint="@string/few_words_of_yourself"
+                        android:importantForAutofill="no"
+                        android:inputType="textPersonName"
+                        android:maxLines="3"
+                        android:textSize="14sp"
+                        android:ellipsize="end"
+                        android:paddingStart="16dp"
+                        android:paddingTop="13dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="13dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/clr_999999" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/btn_gradiant_background"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</layout>

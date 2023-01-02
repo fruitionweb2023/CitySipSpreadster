@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:background="@android:color/transparent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="24dp"
+                android:orientation="vertical">
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/screenPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/llMain"/>
+
+                <LinearLayout
+                    android:id="@+id/llMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_alignParentBottom="true">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:tabBackground="@drawable/indicatior_selector"
+                        app:tabIndicatorHeight="0dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="41dp"
+                            android:gravity="center">
+
+
+                            <Button
+                                android:id="@+id/btnCancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:text="Skip"
+                                android:textAllCaps="false"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/clr_EA2A31"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="41dp"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/btnWidthraw"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/btn_sixtydp_corner_radius"
+                                android:text="Next"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>
